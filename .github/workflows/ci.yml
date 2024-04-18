@@ -1,4 +1,4 @@
-name: ci 
+name: create_site_web
 on:
   push:
     branches:
