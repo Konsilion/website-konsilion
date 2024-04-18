@@ -19,11 +19,11 @@ nav:
         
     - À propos: pages/informations.md
     
-    - Recherche & Développement:
+#    - Recherche & Développement:
     
-        - Projets: katalog/projets/home.md
+#        - Projets: katalog/projets/home.md
 
-#         - Tâches: katalog/taches/home.md
+#        - Tâches: katalog/taches/home.md
 
 #         - Ressources: katalog/ressources/home.md
 
