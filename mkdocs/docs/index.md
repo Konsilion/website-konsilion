@@ -9,7 +9,7 @@ hide:
 
 # Développer, proposer et promouvoir la Low-technologie.
 
-Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques.
+Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
 
 <br><br>
 
