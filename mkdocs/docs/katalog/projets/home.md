@@ -11,7 +11,5 @@ hide:
     .md-content, .md-typeset, .md-content__inner {
         margin: 0px !important;
         padding: 0px !important;
-    }
-
-    
+    }    
 </style>
