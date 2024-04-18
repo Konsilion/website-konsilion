@@ -1,137 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://konsilion.fr/v01/</loc>
+         <loc>https://konsilion.fr/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/</loc>
+         <loc>https://konsilion.fr/admin/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/admin-domaine/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/admin-domaine/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/admin-droits/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/admin-droits/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/admin-parametrer/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/admin-parametrer/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/admin-update/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/admin-update/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/parametrage/activer-contribution/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/parametrage/activer-contribution/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/admin/parametrage/personnalisation-site/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/admin/parametrage/personnalisation-site/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/katalogs/catalogue-creer/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/katalogs/catalogue-creer/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/katalogs/catalogue-lier/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/katalogs/catalogue-lier/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/katalogs/catalogue-modifier/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/katalogs/catalogue-modifier/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/katalogs/catalogue-supprimer/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/katalogs/catalogue-supprimer/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/klouds/en-savoir-plus/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/klouds/en-savoir-plus/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/pages/page-commenter/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/pages/page-commenter/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/pages/page-creer/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/pages/page-creer/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/pages/page-modifier/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/pages/page-modifier/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/admin/tutoriels/pages/page-supprimer/</loc>
+         <loc>https://konsilion.fr/admin/tutoriels/pages/page-supprimer/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/katalog/klouds/home/</loc>
+         <loc>https://konsilion.fr/katalog/klouds/home/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/katalog/projets/home/</loc>
+         <loc>https://konsilion.fr/katalog/projets/home/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/katalog/ressources/home/</loc>
+         <loc>https://konsilion.fr/katalog/ressources/home/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/katalog/taches/home/</loc>
+         <loc>https://konsilion.fr/katalog/taches/home/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/informations/</loc>
+         <loc>https://konsilion.fr/pages/informations/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/katalog/</loc>
+         <loc>https://konsilion.fr/pages/katalog/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/konnect/</loc>
+         <loc>https://konsilion.fr/pages/konnect/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/konsilion-hub/</loc>
+         <loc>https://konsilion.fr/pages/konsilion-hub/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/presentation/</loc>
+         <loc>https://konsilion.fr/pages/presentation/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://konsilion.fr/v01/pages/projets/ordinateur-low-tech/</loc>
+         <loc>https://konsilion.fr/pages/projets/ordinateur-low-tech/</loc>
          <lastmod>2024-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
