@@ -39,7 +39,7 @@ site_url: https://konsilion.fr
 repo_url: https://github.com/konsilion/website
 
 extra:
-  katalog_repo: "https://github.com/konsilion/website"
+  katalog_repo: "https://github.com/konsilion/website-konsilion"
   katalog_site: "https://konsilion.fr"
   katalog_mdp: "konsilion"
   
