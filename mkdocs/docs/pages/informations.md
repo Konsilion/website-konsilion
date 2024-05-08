@@ -1,13 +1,11 @@
 ---
-title: Qui sommes-nous ?
-add: true
-modify: false
-slider: false
+title: Contact
 hide:
   - toc
   - navigation
 ---
 
+<br>
 
 # **Contact**
 

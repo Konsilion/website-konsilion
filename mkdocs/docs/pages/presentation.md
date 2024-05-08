@@ -51,68 +51,6 @@ hide:
     * [Extrait vidéo - Restitution Glocal Low-tech](https://www.youtube.com/live/THa4EnlgLKc?si=u8Br5wY-Q0h04FL6&t=10101)
     
     
-
-
-
-=== "Katalog - CMS"
-
-    <br>
-    Avec **Katalog**, équipez-vous dès à présent d’une vitrine permettant le suivi, le partage et l’appropriation de vos réalisations et projets.
-
-    <div class="ksln-grid">
-        <div class="ksln-cards"><b>Site Web - En quelques clics</b></div>
-        <div class="ksln-cards"><b>Penser pour la collaboration</b></div>
-        <div class="ksln-cards"><b>Spécifique à vos besoins</b></div>
-        <div class="ksln-cards"><b>Supports techniques</b></div>
-        <div class="ksln-cards"><b>Pas de serveur à gérer</b></div>
-        <div class="ksln-cards"><b>Open source - 100% Gratuit</b></div>   
-    </div>
-
-    Katalog est ce que l’on appelle un *système de gestion de contenu*, conçu pour les utilisateurs qui cherchent à créer et à gérer facilement leur propre site web sans avoir besoin de connaissances techniques approfondies.
-
-    Katalog vous fournit également des espaces de stockages en ligne sécurisés pour stocker, synchroniser et partager vos fichiers (pdf, texte, images, codes, tableurs, etc.). 
-
-    Ayez également la possibilité de collaborer et de travailler ensemble sur des fichiers grâce à des outils de commentaire, de modification et de suivi des changements. 
-
-    Disponible gratuitement, avec des options de stockage supplémentaire, cette application open source est accessible et modifiable par tous, ce qui signifie que les développeurs et les utilisateurs peuvent contribuer au <a href="https://github.com/Konsilion/katalog-template" target="_blank" >code source</a> et l'adapter à leurs besoins.
-
-    <br>
-
-    [En savoir plus sur Katalog](../katalog){ .md-button .md-button--primary style="float: right;"}
-    <hr><br>
-    ![technologies-konnect](https://user-images.githubusercontent.com/99027754/209567615-94205447-bbe3-408c-aafb-2baa5d9afbf5.png){: style="margin: 20px; max-width: 200px; width: 100%; float: right; opacity: 0.4;"}
-   
-   
-=== "Konnect - DataScience"
-
-    <br>
-    Avec **Konnect**, équipez-vous dès à présent d’outils permettant la création, la mise à disposition de vos ressources et projets de (Data) Science.
-
-    <div class="ksln-grid">
-        <div class="ksln-cards"><b>Penser pour la collaboration</b></div>
-        <div class="ksln-cards"><b>Modélisations & Data</b></div>
-        <div class="ksln-cards"><b>Prototypes & Laboratoires</b></div>
-        <div class="ksln-cards"><b>Plans & Fabrication</b></div>
-        <div class="ksln-cards"><b>Rapports & Documentation</b></div>
-        <div class="ksln-cards"><b>Open source - 100% Gratuit</b></div>   
-    </div>
-
-    Konnect est ce que l’on appelle un *orchestrateur de logiciels*, conçu pour les Data Scientist qui souhaite acquérir un set de base et évolutif. 
-
-    Konnect vous fournit des logiciels tels que Git ou encore Conda, qui sont des incontournables pour une DataScience libre et collaborative. 
-
-    Ayez également la possibilité de créer des applications Web, facilement et rapidement, avec Mercury. Ces applications sont créées automatiquement à partir de vos Jupyter Notebook, et permet à de néophytes de s'emparer de vos études, de leurs paramètres et des divers résultats. 
-
-    Disponible gratuitement, cette application open source est accessible et modifiable par tous, ce qui signifie que les développeurs et les utilisateurs peuvent contribuer au <a href="https://github.com/Konsilion/Konnect/" target="_blank">code source</a> et l'adapter à leurs besoins.
-
-    <br>
-
-    [En savoir plus sur Konnect](../konnect){ .md-button .md-button--primary style="float: right;"}
-    <hr><br>
-    
-    ![technologies-konnect](https://user-images.githubusercontent.com/99027754/206035683-e9b5f5bf-7495-45b6-930f-e198c37cd40b.png){: style="margin: 20px; max-width: 600px; width: 100%; float: right; opacity: 0.4;"}
-        
-
 === "Logiciels supports"
 
     <div class="ksln-grid">
@@ -202,4 +140,63 @@ hide:
         </div>
     </div>
     
+
+
+=== "Katalog - CMS"
+
+    <br>
+    Avec **Katalog**, équipez-vous dès à présent d’une vitrine permettant le suivi, le partage et l’appropriation de vos réalisations et projets.
+
+    <div class="ksln-grid">
+        <div class="ksln-cards"><b>Site Web - En quelques clics</b></div>
+        <div class="ksln-cards"><b>Penser pour la collaboration</b></div>
+        <div class="ksln-cards"><b>Spécifique à vos besoins</b></div>
+        <div class="ksln-cards"><b>Supports techniques</b></div>
+        <div class="ksln-cards"><b>Pas de serveur à gérer</b></div>
+        <div class="ksln-cards"><b>Open source - 100% Gratuit</b></div>   
+    </div>
+
+    Katalog est ce que l’on appelle un *système de gestion de contenu*, conçu pour les utilisateurs qui cherchent à créer et à gérer facilement leur propre site web sans avoir besoin de connaissances techniques approfondies.
+
+    Katalog vous fournit également des espaces de stockages en ligne sécurisés pour stocker, synchroniser et partager vos fichiers (pdf, texte, images, codes, tableurs, etc.). 
+
+    Ayez également la possibilité de collaborer et de travailler ensemble sur des fichiers grâce à des outils de commentaire, de modification et de suivi des changements. 
+
+    Disponible gratuitement, avec des options de stockage supplémentaire, cette application open source est accessible et modifiable par tous, ce qui signifie que les développeurs et les utilisateurs peuvent contribuer au <a href="https://github.com/Konsilion/katalog-template" target="_blank" >code source</a> et l'adapter à leurs besoins.
+
+    <br>
+
+    [En savoir plus sur Katalog](../katalog){ .md-button .md-button--primary style="float: right;"}
+    <hr><br>
+    ![technologies-konnect](https://user-images.githubusercontent.com/99027754/209567615-94205447-bbe3-408c-aafb-2baa5d9afbf5.png){: style="margin: 20px; max-width: 200px; width: 100%; float: right; opacity: 0.4;"}
+   
+   
+=== "Konnect - DataScience"
+
+    <br>
+    Avec **Konnect**, équipez-vous dès à présent d’outils permettant la création, la mise à disposition de vos ressources et projets de (Data) Science.
+
+    <div class="ksln-grid">
+        <div class="ksln-cards"><b>Penser pour la collaboration</b></div>
+        <div class="ksln-cards"><b>Modélisations & Data</b></div>
+        <div class="ksln-cards"><b>Prototypes & Laboratoires</b></div>
+        <div class="ksln-cards"><b>Plans & Fabrication</b></div>
+        <div class="ksln-cards"><b>Rapports & Documentation</b></div>
+        <div class="ksln-cards"><b>Open source - 100% Gratuit</b></div>   
+    </div>
+
+    Konnect est ce que l’on appelle un *orchestrateur de logiciels*, conçu pour les Data Scientist qui souhaite acquérir un set de base et évolutif. 
+
+    Konnect vous fournit des logiciels tels que Git ou encore Conda, qui sont des incontournables pour une DataScience libre et collaborative. 
+
+    Ayez également la possibilité de créer des applications Web, facilement et rapidement, avec Mercury. Ces applications sont créées automatiquement à partir de vos Jupyter Notebook, et permet à de néophytes de s'emparer de vos études, de leurs paramètres et des divers résultats. 
+
+    Disponible gratuitement, cette application open source est accessible et modifiable par tous, ce qui signifie que les développeurs et les utilisateurs peuvent contribuer au <a href="https://github.com/Konsilion/Konnect/" target="_blank">code source</a> et l'adapter à leurs besoins.
+
+    <br>
+    
+    ![technologies-konnect](https://user-images.githubusercontent.com/99027754/206035683-e9b5f5bf-7495-45b6-930f-e198c37cd40b.png){: style="margin: 20px; max-width: 600px; width: 100%; float: right; opacity: 0.4;"}
+        
+
+
 ---

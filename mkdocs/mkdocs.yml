@@ -15,7 +15,7 @@ nav:
 
         - Katalog - CMS: pages/katalog.md
 
-        - Konnect - DataScience: https://konnect.konsilion.fr
+#        - Konnect - DataScience: https://konnect.konsilion.fr
         
     - À propos: pages/informations.md
     
@@ -34,7 +34,7 @@ nav:
 
 site_name: Konsilion - Low-technologie
 site_author: Nicolas Brémond
-site_description: Développer, proposer et promouvoir la Low-technologie.
+site_description: Promouvoir la Low-technologie.
 site_url: https://konsilion.fr
 repo_url: https://github.com/konsilion/website-konsilion
 

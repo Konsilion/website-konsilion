@@ -21,19 +21,22 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
 
 ??? tip "Qu'est ce que la Low-tech ?"
 
-    ## **Utile, Durable et accessible**
-    
+    ## Utile, Durable et accessible
+
     ---
-    
-    « La ou les low-tech, mot à mot basses technologies, désignent une catégorie de produits, de services, de procédés ou autres systèmes permettant, via une transformation technique, organisationnelle et culturelle, le développement de nouveaux modèles de société intégrant, dans leurs principes fondamentaux, les exigences de durabilité forte et de résilience collective.
 
-    La low-tech n’est pas une démarche technophobe mais technocritique. Autrement dit, même si elle s’oppose à l’obsession de la high-tech, celle-ci s’accorde du principe de techno-discernement »
+    « La ou les low-tech, littéralement basses technologies, désignent une catégorie de techniques durables, simples, appropriables et résilientes. [...] La low-tech n'est pas une démarche technophobe, mais technocritique. Autrement dit, même si elle s'oppose à l’obsession de la high-tech, celle-ci s'accorde du principe de techno-discernement1, la low-tech est donc complémentaire à la high-tech dite utile. 
     
+    La low-tech désigne tout type de produits, de services, de procédés ou autres systèmes permettant, via une transformation technique, organisationnelle et culturelle, le développement de nouveaux modèles de société intégrant, dans leurs principes fondamentaux, les exigences de durabilité forte et de résilience collective2. »
+
+
+    *Wikipédia mai 2024*
+
     ---
+
+    ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
+
     
-    Wikipédia 10-2022 – *Nous vous présentons la définition de Wikipédia car elle issue d’une réflexion collaborative, amenée à évoluer.*
-
-
 <br><br><br><br><br><br><br><br>
 
 <style>

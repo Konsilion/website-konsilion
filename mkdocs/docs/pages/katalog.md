@@ -1,9 +1,5 @@
 ---
 title: Katalog
-comments: false
-add: true
-edit: true
-slider: true
 hide:
   - toc
 ---

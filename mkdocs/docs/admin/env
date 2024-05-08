@@ -30,4 +30,4 @@ markdown_extensions:
 extra_css:
   - https://konsilion.github.io/katalog-setup/css/konsilion-mkdocs.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
-  - admin/css/colors.css
+  - admin/css/custom.css
