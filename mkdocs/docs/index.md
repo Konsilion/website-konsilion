@@ -7,7 +7,7 @@ hide:
 
 ![logo-accueil](https://user-images.githubusercontent.com/99027754/209585047-f1e419f1-8f55-43d2-bfc6-6d51aec13ecf.png){style="max-width: 100%; width: 450px"}
 
-# Développer, proposer et promouvoir la Low-technologie
+# Promouvoir la Low-technologie
 
 Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
 
