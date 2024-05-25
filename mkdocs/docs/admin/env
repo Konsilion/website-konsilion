@@ -13,6 +13,7 @@ extra:
 
 plugins:
   - macros
+  - mkdocs-video
 
 markdown_extensions:
   - tables
