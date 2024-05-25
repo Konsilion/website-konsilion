@@ -9,6 +9,7 @@ hide:
 
 ---
 
+![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
 # Konnect - DataScience collaborative
 
