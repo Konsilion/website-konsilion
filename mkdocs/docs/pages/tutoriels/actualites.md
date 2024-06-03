@@ -10,13 +10,6 @@ categories:
 date: 2024-01-31
 ---
 
-Pour les textes d'actualité il suffit de :
-
-* supprimer les categories non concernées.
-* changer la date
-
-
-
 # Titre Principal - il n'y en a qu'un seul dans un document
 
 ## Titre 2
@@ -48,10 +41,11 @@ Pour ajouter une barre horizontale, il faut faire "<hr>" :
 ### Listes numérotée
 
 1. Pour faire une liste numérotée, il faut indiquer un chiffre au départ,
-2. Automatiquement le logiciel comprendre que s'il y a un chiffre et un point alors c'est une liste numérotée,
-3. Il ne **faut pas** sauter de ligne sinon c'est une nouvelle liste.
-4. D'ailleurs, tu remarque que peut importe le chiffre qui est mis,
-5. Automatiquement le logiciel remet en forme la liste numérotée.
+1. Automatiquement le logiciel comprendre que s'il y a un chiffre et un point alors c'est une liste numérotée,
+1. D'ailleurs, tu remarque que peut importe le chiffre qui est mis,
+1. Automatiquement le logiciel remet en forme la liste numérotée.
+
+1. Il ne **faut pas** sauter de ligne sinon c'est une nouvelle liste.
 
 ## Image, vidéo et Hyperlien
 
@@ -59,11 +53,11 @@ Pour ajouter une barre horizontale, il faut faire "<hr>" :
 
 Pour insérer une image il faut faire cela :
 
-![description de l'image](https://lien.org)
+![description de l'image](https://github.com/Konsilion/konsilion-drive/blob/main/logo_banniere_index.png?raw=true)
 
 Voici une méthode où il y a plus de paramètre pour l'image :
 
-![description de l'image](https://lien.org){style = width ...}
+![description de l'image](https://github.com/Konsilion/konsilion-drive/blob/main/logo_banniere_index.png?raw=true){style = width ...}
 
 ### Vidéos
 
@@ -83,21 +77,33 @@ Les admonitions sont très utiles afin de stylyser le document. Ils sont aussi a
 
 Voici les deux types, encart ou accordeon :
 
-* encart : !!!
-* accordeon : 
-  * ???  (accordeon fermé de base)
-  * ???+ (accordeon ouvert de base)
+* ???+ (accordeon ouvert de base)
 
-Pour la suite, je vais expliquer avec un accordeon fermé de base, mais il suffira de changer les "???" par l'admonition souhaité.
-
-Voici la structure :
-
-??? tip "Titre de l'admonition"
+???+ tip "Exemple d'accordeon ouvert de base"
 
 	Commencer par une tabulation et rédiger le texte. L'ensemble du texte doit être tabulé sinon cela ne marchera pas.
 	Dans une tabulation il est tout à fait possible d'insérer une image :
 	![](https://lien.org)
 
 	Maintenant si je vais à la ligne sans tabulation ça stopera l'admonition.
+
+
+* ???  (accordeon fermé de base)
+  
+??? note "Exemple d'accordeon fermé de base"
+
+	Voici un accordeon de type "note" avec pour titre "Exemple d'accordeon fermé de base" 
+	
+
+* encart : !!!
+
+!!! note "Exemple d'encart"
+
+	Voici un encart simple de type "note" avec pour titre "Exemple d'encart"
+
+!!! note ""
+
+	Voici un encart simple de type "note" sans titre
+
 
 Voilà.
