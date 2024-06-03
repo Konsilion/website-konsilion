@@ -24,7 +24,7 @@ Pour mettre en *italic* il faut mettre entre un asterix. Pour mettre en **gras u
 
 Ajouter des espaces, ne change rien.
 
-Pour ajouter des espaces en plus il faut faire "<br />" :
+Pour ajouter des saut à la ligne, en plus il faut faire "<br>" :
 
 Au dessus, il y a trois à la ligne de rejoutés.
 
@@ -57,7 +57,7 @@ Pour insérer une image il faut faire cela :
 
 Voici une méthode où il y a plus de paramètre pour l'image :
 
-![description de l'image](https://github.com/Konsilion/konsilion-drive/blob/main/logo_banniere_index.png?raw=true){style = width ...}
+![description de l'image](https://github.com/Konsilion/konsilion-drive/blob/main/logo_banniere_index.png?raw=true){align=right style="max-width: 100%; width: 250px;"}
 
 ### Vidéos
 
