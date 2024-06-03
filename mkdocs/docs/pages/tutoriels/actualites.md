@@ -45,7 +45,8 @@ Pour ajouter une barre horizontale, il faut faire "<hr>" :
 1. D'ailleurs, tu remarque que peut importe le chiffre qui est mis,
 1. Automatiquement le logiciel remet en forme la liste numérotée.
 
-1. Il ne **faut pas** sauter de ligne sinon c'est une nouvelle liste.
+
+1. Il ne **faut pas** sauter deux fois une ligne sinon c'est une nouvelle liste.
 
 ## Image, vidéo et Hyperlien
 
