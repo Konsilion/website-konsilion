@@ -9,4 +9,4 @@
     padding: 0;
     overflow: hidden;
     height: 100%;
-  " src="https://konsilion.fr/pages/diag360"></iframe>
+  " src="http://195.200.14.8/app/diag360_v3"></iframe>
