@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+    
+        #OutputTables {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 15px; /* Ajoutez un espace entre les éléments si nécessaire */
+        }   
+        
+        h2 {font-weight: bold; font-family: 'Carlito', 'Calibri', sans-serif; }
+    
+        .table-container {
+            flex: 1 1 calc(33.333% - 10px); /* Ajustez la largeur des éléments selon vos besoins */
+        }
+        table {
+            width: 100%;
+
+        }
+        .col1 {
+            width: 25px;
+        }
+        .col2 {
+            width:100%
+        }
+        .col3 {
+            width: 100px; /* Ajustez cette valeur selon vos besoins */
+        }
+
+          /* Media query pour ajuster la disposition de la grille */
+        @media (max-width: 1220px) {
+            .table-container {
+                flex: 1 1 calc(50% - 10px); /* Ajustez la largeur des éléments pour 2 colonnes */
+            }
+        }
+        @media (max-width: 750px) {
+            .table-container {
+                flex: 1 1 100%; /* Ajustez la largeur des éléments pour 1 colonne */
+            }
+        }
+    
+
+        table td {
+            padding: 10px 5px;
+        }
+        
+        table tr {
+            border: 1px solid black;
+        }
+
+        #OutputArea table {
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        #OutputGanttChart {
+            margin-bottom: 50px;
+        }
+        
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="./Activity.js"></script>
+</head>
+
+<body>
+    <button onclick="eventConfirmChange()">Lancer l'application</button>
+    <hr/>
+    <div id="OutputArea">
+        <h2>Planning</h2>
+        Ce document est une annexe du document Plan d'action, dont les pages associées aux actions sont indiquées dans le tableau.<br><br><hr>
+        <div id="LegendChart"></div>
+        <canvas id="OutputGanttChart"></canvas>
+        <div id="OutputTables"></div>
+    </div>
+
+	<div id="OutputText" style="display: none;">
+	    <h4>Connect:</h4>
+	    <span id="Connect"></span>
+	    <br>
+	    <h4>Critical Path:</h4>
+	    <span id="CriticalPath"></span>
+	</div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
