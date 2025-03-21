@@ -1,5 +1,5 @@
 name;dependencies;duration;type;designation;page;id;grise
-A;;8;SPat Romain Dubray;Réalisation d'une campagne de contrôle des coffrets et armoires électriques des zones biogaz R20, S20 et du bâtiment E20 (fort pouvoir calorifique);1;1;o
+A;;8;Romain Dubray;Réalisation d'une campagne de contrôle des coffrets et armoires électriques des zones biogaz R20, S20 et du bâtiment E20 (fort pouvoir calorifique);1;1;o
 B;;8;DP Olivier Bouly;Identification et contrôle des coffrets et armoires Basse Tension des locaux sensibles (au sens de la continuité de service) et non redondant de SAV;2;2;o
 C;;9;DMR Sylvain Feuillolay;Renforcement des moyens en eau d'extinction incendie au sein de l'UPEI en allant au-delà du cadre réglementaire;3;3;o
 D;;9;DP Olivier Bouly;Déploiement de la détection incendie au sein de locaux pré-identifiés;4;4;o
