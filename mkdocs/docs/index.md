@@ -8,11 +8,11 @@ hide:
 
 # Promouvoir la Low-technologie
 
-[On continue ?](./pages/presentation/){ .md-button .md-button--secondary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
-
 <br><br>
 
 Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
+
+<br><br>
 
 ??? tip "Qu'est ce que la Low-tech ?"
 
@@ -32,9 +32,10 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
     ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
 
 
-<br><br>
+[On continue ?](./pages/presentation/){ .md-button .md-button--secondary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
+<br><br><br>
 
-### Collectifs accompagnés
+## Collectifs accompagnés
 
 <hr>
 
