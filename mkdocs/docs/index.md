@@ -35,11 +35,11 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
     ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
 
 
-<br>
-
-<hr>
+<br><br><br>
 
 ### Collectifs accompagnés
+
+<hr>
 
 [Parlement de la rivière Isère](https://parlement-isere.org){ .md-button .md-button--primary target="_blank" style="float: left; margin-right: 75px;"}
 
