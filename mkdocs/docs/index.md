@@ -9,11 +9,11 @@ hide:
 
 # Promouvoir la Low-technologie
 
-<br><br>
-
 [On continue ?](./pages/presentation/){ .md-button .md-button--secondary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
 
-[Nous contacter](./pages/informations/#contact){ .md-button .md-button--secondary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
+<br>
+
+[Nous contacter](./pages/informations/#contact){ .md-button .md-button--primary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
 
 Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
 
