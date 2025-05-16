@@ -34,7 +34,7 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
     ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
 
 
-<br><br><br>
+<br><br>
 
 ### Collectifs accompagnés
 
