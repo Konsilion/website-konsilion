@@ -32,11 +32,9 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
 
 [On continue ?](./pages/presentation/){ .md-button .md-button--primary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
 
-<br><br>
+<br><br><br>
 
 ## Collectifs accompagnés
-
-<hr>
 
 [Parlement de la rivière Isère](https://parlement-isere.org){ .md-button .md-button--secondary target="_blank" style="float: left; margin-right: 25px;"}
 
