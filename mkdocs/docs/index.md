@@ -36,8 +36,34 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
 
     ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
 
-    
+
+
+### Collectifs accompagnés
+
+[Parlement de la rivière Isère](https://parlement-isere.org){ .md-button .md-button--primary target="_blank" style="float: left; margin-bottom: 75px;"}
+[Diag360° - Résilience territoriale](https://konsilion.github.io/diag360/){ .md-button .md-button--primary target="_blank" style="float: left; margin-bottom: 75px;"}
+
+
+
+
+
+
 <br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
     .md-container {
