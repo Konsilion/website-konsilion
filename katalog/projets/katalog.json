@@ -1,0 +1,7 @@
+{
+  "Bienvenue sur notre catalogue projets": {
+    "descr": "Ici, vous trouverez nos différents projets, vous pouvez utiliser les filtres de recherche ou parcourir les catégories de projets pour trouver ceux qui vous intéressent. Chaque projet à sa propre page de détail où vous donnant une idée plus concrète de ce dernier. Vous pouvez laisser des commentaires et poser des questions sur les projets qui vous intéressent dans leur section 'commentaires'.",
+    "model": "projet",
+    "cardview": "true"
+  }
+}
