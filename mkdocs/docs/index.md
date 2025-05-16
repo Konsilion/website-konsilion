@@ -45,24 +45,7 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
 
 
 
-
-
-
-<br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br><br><br>
 
 
 <style>
