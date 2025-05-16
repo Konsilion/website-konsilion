@@ -38,7 +38,7 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
 
 [Parlement de la rivière Isère](https://parlement-isere.org){ .md-button .md-button--secondary target="_blank" style="float: left; margin-right: 25px; margin-bottom: 25px;"}
 
-[Diag360° - Résilience territoriale](https://konsilion.github.io/diag360/){ .md-button .md-button--secondary target="_blank" style="float: left; margin-right: 25px;"}
+[Diag360° - Résilience territoriale](https://konsilion.github.io/diag360/){ .md-button .md-button--secondary target="_blank" style="float: left; margin-right: 25px; padding: 5px !important;"}
 
 
 
