@@ -11,14 +11,6 @@ hide:
 
 Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
 
-<br><br>
-
-[On continue ?](./pages/presentation/){ .md-button .md-button--primary style="float: left; margin-bottom: 75px;"}
-
-[Nous contacter](./pages/informations/#contact){ .md-button .md-button--secondary style="float: right; margin-left: 10px; margin-bottom:15px;"}
-
-<br><br><br><br><br>
-
 ??? tip "Qu'est ce que la Low-tech ?"
 
     ## Utile, Durable et accessible
@@ -37,6 +29,17 @@ Outils et méthodes utiles au développement et à l’appropriation de la techn
     ![Image title](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Innovation_low-tech.jpg/2560px-Innovation_low-tech.jpg){ width="1200px" }
 
 
+
+
+<br><br>
+
+[On continue ?](./pages/presentation/){ .md-button .md-button--primary style="float: left; margin-bottom: 75px;"}
+
+[Nous contacter](./pages/informations/#contact){ .md-button .md-button--secondary style="float: right; margin-left: 10px; margin-bottom:15px;"}
+
+<br>
+
+<hr>
 
 ### Collectifs accompagnés
 
