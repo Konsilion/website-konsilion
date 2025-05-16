@@ -4,16 +4,15 @@ hide:
   - navigation
 ---
 
-
 ![logo-accueil](https://user-images.githubusercontent.com/99027754/209585047-f1e419f1-8f55-43d2-bfc6-6d51aec13ecf.png){style="max-width: 100%; width: 450px"}
-
-# Promouvoir la Low-technologie
 
 [On continue ?](./pages/presentation/){ .md-button .md-button--secondary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
 
-<br>
+<br><br><br>
 
-[Nous contacter](./pages/informations/#contact){ .md-button .md-button--primary style="text-align: center; float: right; margin: 20px 0 50px 0px; border-radius: 50px !important"}
+# Promouvoir la Low-technologie
+
+<br><br>
 
 Outils et méthodes utiles au développement et à l’appropriation de la technologie et des techniques
 
