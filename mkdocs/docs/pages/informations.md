@@ -16,11 +16,3 @@ hide:
 * Grenoble, ISÈRE
   
 * [Plannifions une réunion](https://cloud.libreon.fr/apps/calendar/appointment/iLY6DbGQ5bdA)
-
-<iframe
-  id="inlineFrameExample"
-  title="Inline Frame Example"
-  width="300"
-  height="200"
-  src="https://cloud.libreon.fr/apps/calendar/appointment/iLY6DbGQ5bdA">
-</iframe>
