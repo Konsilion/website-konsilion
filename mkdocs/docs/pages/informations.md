@@ -11,8 +11,6 @@ hide:
 
 * [nicolas.bremond@konsilion.fr](mailto: nicolas.bremond@konsilion.fr)
 
-* 06 61 26 23 26
-
 * Grenoble, ISÈRE
   
 * [Plannifions une réunion](https://cloud.libreon.fr/apps/calendar/appointment/iLY6DbGQ5bdA)
