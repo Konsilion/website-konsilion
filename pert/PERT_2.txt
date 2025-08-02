@@ -1,0 +1,31 @@
+name;dependencies;duration;type;designation;page;id;grise
+A;;8;Romain Dubray;Réalisation d'une campagne de contrôle des coffrets et armoires électriques des zones biogaz R20, S20 et du bâtiment E20 (fort pouvoir calorifique);1;1;o
+B;;8;DP Olivier Bouly;Identification et contrôle des coffrets et armoires Basse Tension des locaux sensibles (au sens de la continuité de service) et non redondant de SAV;2;2;o
+C;;9;DMR Sylvain Feuillolay;Renforcement des moyens en eau d'extinction incendie au sein de l'UPEI en allant au-delà du cadre réglementaire;3;3;o
+D;;9;DP Olivier Bouly;Déploiement de la détection incendie au sein de locaux pré-identifiés;4;4;o
+E;;9;Noëlle Gameiro;Déploiement de la détection incendie au sein de locaux pré-identifiés;5;5;o
+F;;6;Guillaume Civel;Identification des secteurs de feu de l'usine et réalisation, sur une unité pilote, le marquage au sol et/ou au mur;6;6;o
+G;;6;DMR Sylvain Feuillolay;Identification des secteurs de feu de l'usine et réalisation, sur une unité pilote, le marquage au sol et/ou au mur;7;7;o
+H;;3;Yorich Nwagaya;Asservissement du coffret de dépotage à la séquence de rinçage de la fosse de fuite;8;8;o
+I;;9;DP Olivier Bouly;Mise en conformité de la zone de dépotage Javel / chlorure ferrique au Traitement des jus, et mise à jour de la documentation associée (plans, consignes, etc);9;9;o
+J;;4;Direction Technique Claire Collignon;Formalisation dans une procédure de gestion des modifications la réalisation systématique d'une analyse de risque visant à évaluer l'impact environnemental, le risque accidentel et la procédure administrative associée à chaque modification et les responsabilité de  l'ensemble des acteurs impliqués dans les différentes phases de mise en oeuvre des modifications.;10;10;o
+K;;6;DP Olivier Bouly;Renforcement du stock de pièces de rechanges pour les MMR (Mesures de maîtrise des risques);11;11;o
+L;;6;SPat Romain Dubray;Renforcement du stock de pièces de rechanges pour les MMR (Mesures de maîtrise des risques);12;12;o
+M;;3;DMR Sylvain Feuillolay;Identification des mesures compensatoires en cas d'arrêt ou d’indisponibilité d’une MMR;13;13;o
+N;;6;Yorich Nwagaya;Identification des mesures compensatoires en cas d'arrêt ou d’indisponibilité d’une MMR;14;15;o
+O;;9;DP Olivier Bouly;Remplacement des conduites de Biogaz (acier) du service 4 dans deux regards prioritaires à traiter;15;17;o
+P;;3;DP Olivier Bouly;Recensement des équipements sous pression impliquant du biogaz et des conduites de biogaz Moyenne Pression relevant de la législation des équipements sous pression et élaboration d'un plan de contrôle et de surveillance ;16;19;o
+Q;;9;DP Olivier Bouly;Mise en place des détecteurs flamme et gaz sur les conduites apparentes Moyenne Pression d'alimentation des consommateurs Service 4, des zones pré-identifiées comme prioritaires au vu du risque de fuite;17;21;o
+R;;6;Sabine Heude;Elaboration et mise en oeuvre du plan de contrôle visant à prévenir, en toute circonstances, les émissions de billes dans l'environnement (surveillance des biofiltres, de la hauteur des matériaux);18;23;o
+S;;2;DEPE Sam Azimi;Elaboration et mise en oeuvre du plan de contrôle visant à prévenir, en toute circonstances, les émissions de billes dans l'environnement (surveillance des biofiltres, de la hauteur des matériaux);19;25;o
+T;;3;SPat Romain Dubray;Amélioration des moyens de détection de fuite de billes (déterminer le type de surveillance: instrumentée et/ou vidéo d'accumulation de bille avec report d'alarme);20;27;o
+U;;4;DMR Sylvain Feuillolay;Mise en place de barrages au rejet des usines;21;29;o
+V;;6;Sabine Heude;Mise en place de barrages au rejet des usines;22;31;o
+W;;9;DEPE Sam Azimi;Etablissement d'un plan de pérennisation de la gestion des alarmes et dysfonctionnements par l'outil "ORAGES";23;33;o
+X;;9;Gilles Jaron;Intégration dans la gestion des incidents, d'une étape d'analyse de risques permettant de questionner les choix de gestion et de les réajuster le cas échéant.;24;35;o
+Y;;9;Gilles Jaron;Intégration dans la gestion des incidents, d'une étape d'analyse de risques permettant de questionner les choix de gestion et de les réajuster le cas échéant.;25;37;o
+Z;;9;DMR Sylvain Feuillolay;Consolidation du plan de continuité d'activité et réalisation des actions identifiées pour le scénario perte d'utilité électrique;26;39;o
+AA;;6;Nicolas Leroy;Elaboration du plan de continuité d'activité et de service, formalisation et développement du scénario perte d'utilité électrique;27;41;o
+
+
+
