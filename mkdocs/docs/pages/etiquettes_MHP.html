@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Générateur PDF - Étiquettes 60x10 mm</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;background:#f7f7f7;color:#222}
+h1{margin-bottom:6px}
+.container{max-width:680px}
+.card{background:#fff;border:1px solid #ddd;border-radius:10px;padding:18px}
+label{display:block;margin-top:10px;font-weight:600}
+input,select{width:100%;padding:8px;margin-top:6px;border:1px solid #bbb;border-radius:6px;box-sizing:border-box;background:#fff}
+button{margin-top:14px;padding:10px 14px;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+button:hover{background:#333}
+.preview{height:60px;border:1px solid #bbb;border-radius:6px;margin-top:10px;background:#fff}
+.small{font-size:13px;color:#666;margin-top:8px}
+.error{background:#ffe5e5;color:#900;padding:8px;border-radius:6px;margin-top:10px;display:none}
+.info{background:#eef5ff;color:#124;padding:8px;border-radius:6px;margin-top:10px;display:none}
+.inline-check{display:flex;gap:8px;align-items:center;margin-top:12px}
+.inline-check input{width:auto;margin:0}
+.topopts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:18px}
+.color-row{display:flex;gap:10px;align-items:center;margin-top:8px}
+.color-row input[type=color]{width:52px;height:38px;padding:2px;border:1px solid #bbb;border-radius:6px;cursor:pointer;background:#fff}
+.color-row input[type=checkbox]{width:auto;margin:0}
+.color-row label{margin:0;font-weight:600}
+.preview-wrap{margin-top:10px}
+.preview-canvas-wrap{border:1px dashed #bbb;border-radius:8px;background:#fff;padding:12px}
+.preview-note{font-size:12px;color:#666;margin-top:6px}
+@media (max-width:700px){.topopts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Générateur PDF - Étiquettes 60 x 10 mm</h1>
+<div class="small">Format fixe 60 x 10 mm, 3 colonnes × 22 lignes = 66 étiquettes par page, espacement de 2,5 mm, coins arrondis, traits de coupe adaptés.</div>
+
+<div class="card">
+<h2>Saisie manuelle</h2>
+
+<div class="topopts">
+  <div>
+    <label for="fileName">Nom du PDF</label>
+    <input id="fileName" value="etiquettes_60x10.pdf">
+  </div>
+  <div>
+    <label for="displayMode">Contenu des étiquettes</label>
+    <select id="displayMode">
+      <option value="all" selected>Prénom NOM + mail + téléphone</option>
+      <option value="mail">Prénom NOM + mail</option>
+      <option value="phone">Prénom NOM + téléphone</option>
+      <option value="nameonly">Prénom NOM uniquement</option>
+    </select>
+  </div>
+  <div>
+    <label for="fontChoice">Police PDF</label>
+    <select id="fontChoice">
+      <option value="helvetica" selected>Helvetica</option>
+      <option value="times">Times</option>
+      <option value="courier">Courier</option>
+    </select>
+  </div>
+</div>
+
+<label>Nom</label>
+<input id="nom" placeholder="DUPONT">
+
+<label>Prénom</label>
+<input id="prenom" placeholder="Jean">
+
+<label>Mail</label>
+<input id="mail" placeholder="contact@example.fr">
+
+<label>Téléphone</label>
+<input id="telephone" placeholder="01 23 45 67 89">
+
+<div class="inline-check">
+  <input id="prioritizeName" type="checkbox" checked>
+  <label for="prioritizeName" style="margin:0;font-weight:600">Nom prioritaire</label>
+</div>
+
+<label>Couleur de fond</label>
+<div class="color-row">
+  <input id="bgColor" type="color" value="#ffffff">
+  <span id="bgColorText" class="small" style="margin:0">#ffffff</span>
+</div>
+<div id="previewManual" class="preview"></div>
+
+<label>Couleur de la bordure</label>
+<div class="color-row">
+  <input id="borderEnabled" type="checkbox" checked>
+  <label for="borderEnabled">Activer la bordure</label>
+  <input id="borderColor" type="color" value="#000000">
+</div>
+
+<div class="preview-wrap">
+  <div class="small">Aperçu réaliste :</div>
+  <div class="preview-canvas-wrap">
+    <canvas id="previewCanvas" width="540" height="120" style="max-width:100%;height:auto;display:block"></canvas>
+  </div>
+</div>
+
+<button id="manualBtn" type="button">Générer PDF — planche complète (66 étiquettes)</button>
+<div id="manualInfo" class="info"></div>
+<div id="manualError" class="error"></div>
+</div>
+</div>
+
+<script>
+(() => {
+const { jsPDF } = window.jspdf;
+
+const CONFIG = {
+  pageWidth:210, pageHeight:297,
+  labelWidth:60, labelHeight:10,
+  cols:3, rows:22, gap:2.5,
+  marginX:12.5, marginY:12.25,
+  lineSpacing:1.18, minFont:3.0, maxFont:9.5, minSecondaryFont:2.5,
+  textPaddingX:1.4,
+  radius:0.8, cutSize:2.2
+};
+
+function hexToRgb(hex){
+  const h = hex.replace('#','');
+  return {r:parseInt(h.slice(0,2),16), g:parseInt(h.slice(2,4),16), b:parseInt(h.slice(4,6),16)};
+}
+function getManualColor(){ return hexToRgb(document.getElementById("bgColor").value); }
+function getBorderColor(){
+  if (!document.getElementById("borderEnabled").checked) return null;
+  return hexToRgb(document.getElementById("borderColor").value);
+}
+function prioritizeName(){ return document.getElementById("prioritizeName").checked; }
+function showBox(id, msg){
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = msg || "";
+  el.style.display = msg ? "block" : "none";
+}
+function clearMessages(){ showBox("manualInfo", ""); showBox("manualError", ""); }
+function hexColor(rgb){ return "rgb(" + rgb.r + "," + rgb.g + "," + rgb.b + ")"; }
+function textColorForBg(rgb){
+  const lum = 0.2126 * rgb.r + 0.7152 * rgb.g + 0.0722 * rgb.b;
+  return lum > 165 ? {r:0,g:0,b:0} : {r:255,g:255,b:255};
+}
+
+function applyPreviewBackground(el, rgb){
+  el.style.background = hexColor(rgb);
+}
+
+function updateBgColorText(){
+  document.getElementById("bgColorText").textContent = document.getElementById("bgColor").value;
+}
+function onBgColorChange(){
+  updateBgColorText();
+  applyPreviewBackground(document.getElementById("previewManual"), getManualColor());
+  drawPreviewCanvas();
+}
+document.getElementById("bgColor").addEventListener("input", onBgColorChange);
+document.getElementById("bgColor").addEventListener("change", onBgColorChange);
+updateBgColorText();
+applyPreviewBackground(document.getElementById("previewManual"), getManualColor());
+
+function buildLines(data){
+  const mode = document.getElementById("displayMode").value;
+  const fullName = ((data.prenom || "") + " " + (data.nom || "").toUpperCase()).trim();
+  if (mode === "nameonly") return [fullName].filter(Boolean);
+  if (mode === "mail") return [fullName, data.mail || ""].filter(Boolean);
+  if (mode === "phone") return [fullName, data.telephone || ""].filter(Boolean);
+  return [fullName, data.mail || "", data.telephone || ""].filter(Boolean);
+}
+
+function getOptions(){
+  let fileName = (document.getElementById("fileName").value || "etiquettes_60x10.pdf").trim();
+  if (!fileName.toLowerCase().endsWith(".pdf")) fileName += ".pdf";
+  return {
+    fileName,
+    radius: CONFIG.radius,
+    cutSize: CONFIG.cutSize
+  };
+}
+function layout(){ return {w: CONFIG.labelWidth, h: CONFIG.labelHeight}; }
+function mmPerPt(pt){ return pt * 0.352778; }
+
+function previewFontFamily(){
+  const choice = document.getElementById("fontChoice").value;
+  if (choice === "times") return "Times New Roman, serif";
+  if (choice === "courier") return "Courier New, monospace";
+  return "Arial, sans-serif";
+}
+function fitFontUniform(doc, textLines, widthMm, heightMm, fontFamily){
+  let size = CONFIG.maxFont;
+  while (size >= CONFIG.minFont){
+    doc.setFontSize(size);
+    let maxW = 0;
+    for (let i = 0; i < textLines.length; i++){
+      doc.setFont(fontFamily, i === 0 ? "bold" : "normal");
+      maxW = Math.max(maxW, doc.getTextWidth(textLines[i]));
+    }
+    const totalH = textLines.length * mmPerPt(size) * 0.72 * CONFIG.lineSpacing;
+    if (maxW <= widthMm && totalH <= heightMm) return {nameSize:size, secondarySize:size};
+    size -= 0.15;
+  }
+  return {nameSize:CONFIG.minFont, secondarySize:CONFIG.minFont};
+}
+function fitFontPriority(doc, textLines, widthMm, heightMm, fontFamily){
+  if (textLines.length <= 1) return fitFontUniform(doc, textLines, widthMm, heightMm, fontFamily);
+  for (let nameSize = CONFIG.maxFont; nameSize >= CONFIG.minFont; nameSize -= 0.15){
+    doc.setFont(fontFamily, "bold");
+    doc.setFontSize(nameSize);
+    const nameW = doc.getTextWidth(textLines[0]);
+    if (nameW > widthMm) continue;
+    for (let secSize = Math.min(nameSize - 0.5, CONFIG.maxFont - 0.5); secSize >= CONFIG.minSecondaryFont; secSize -= 0.15){
+      let maxW = nameW;
+      doc.setFont(fontFamily, "normal");
+      doc.setFontSize(secSize);
+      for (let i = 1; i < textLines.length; i++) maxW = Math.max(maxW, doc.getTextWidth(textLines[i]));
+      const totalH = (mmPerPt(nameSize) * 0.72) + ((textLines.length - 1) * mmPerPt(secSize) * 0.72);
+      if (maxW <= widthMm && (totalH * CONFIG.lineSpacing) <= heightMm) return {nameSize, secondarySize:secSize};
+    }
+  }
+  return fitFontUniform(doc, textLines, widthMm, heightMm, fontFamily);
+}
+function chooseFontSizes(doc, textLines, widthMm, heightMm, fontFamily){
+  return prioritizeName() ? fitFontPriority(doc, textLines, widthMm, heightMm, fontFamily) : fitFontUniform(doc, textLines, widthMm, heightMm, fontFamily);
+}
+
+function drawLabel(doc, x, y, data, color, fontFamily, radius, borderColor){
+  const {w,h} = layout();
+  const textColor = textColorForBg(color);
+  doc.setFillColor(color.r, color.g, color.b);
+  doc.roundedRect(x, y, w, h, radius, radius, "F");
+
+  // Bordure (décalée vers l'intérieur de lw/2 pour suivre l'arrondi du fond)
+  if (borderColor){
+    const lw = 1.4;
+    const inset = lw / 2;
+    const br = Math.max(0.1, radius - inset);
+    doc.setDrawColor(borderColor.r, borderColor.g, borderColor.b);
+    doc.setLineWidth(lw);
+    doc.roundedRect(x + inset, y + inset, w - lw, h - lw, br, br, "S");
+  }
+
+  const text = buildLines(data);
+  const sizes = chooseFontSizes(doc, text, w - (CONFIG.textPaddingX * 2), h - 1.6, fontFamily);
+  const heights = text.map((_, i) => mmPerPt(i === 0 ? sizes.nameSize : sizes.secondarySize) * 0.72 * CONFIG.lineSpacing);
+  const totalH = heights.reduce((a,b) => a+b, 0);
+  let yPos = y + (h - totalH) / 2;
+
+  for (let i = 0; i < text.length; i++){
+    const size = i === 0 ? sizes.nameSize : sizes.secondarySize;
+    const lineH = mmPerPt(size) * 0.72 * CONFIG.lineSpacing;
+    yPos += lineH * 0.84;
+    doc.setFont(fontFamily, i === 0 ? "bold" : "normal");
+    doc.setFontSize(size);
+    doc.setTextColor(textColor.r, textColor.g, textColor.b);
+    doc.text(text[i], x + CONFIG.textPaddingX, yPos);
+    yPos += lineH * 0.16;
+  }
+}
+
+function drawCutMarks(doc, cutSize){
+  const {w,h} = layout();
+  const xs = [CONFIG.marginX];
+  for (let c = 0; c < CONFIG.cols - 1; c++){
+    const rightEdge = CONFIG.marginX + (c + 1) * w + c * CONFIG.gap;
+    xs.push(rightEdge + CONFIG.gap / 2);
+  }
+  xs.push(CONFIG.pageWidth - CONFIG.marginX);
+  const ys = [CONFIG.marginY];
+  for (let r = 0; r < CONFIG.rows - 1; r++){
+    const bottomEdge = CONFIG.marginY + (r + 1) * h + r * CONFIG.gap;
+    ys.push(bottomEdge + CONFIG.gap / 2);
+  }
+  ys.push(CONFIG.pageHeight - CONFIG.marginY);
+  doc.setDrawColor(0, 0, 0);
+  doc.setLineWidth(0.2);
+  xs.forEach(x => {
+    doc.line(x, 1.0, x, Math.min(CONFIG.marginY - 0.5, 1.0 + cutSize));
+    doc.line(x, CONFIG.pageHeight - 1.0, x, Math.max(CONFIG.pageHeight - CONFIG.marginY + 0.5, CONFIG.pageHeight - 1.0 - cutSize));
+  });
+  ys.forEach(y => {
+    doc.line(1.0, y, Math.min(CONFIG.marginX - 0.5, 1.0 + cutSize), y);
+    doc.line(CONFIG.pageWidth - 1.0, y, Math.max(CONFIG.pageWidth - CONFIG.marginX + 0.5, CONFIG.pageWidth - 1.0 - cutSize), y);
+  });
+}
+
+function drawPage(doc, pageData, color, fontFamily, radius, cutSize, borderColor){
+  const {w,h} = layout();
+  pageData.forEach((d, i) => {
+    const r = Math.floor(i / CONFIG.cols), c = i % CONFIG.cols;
+    const x = CONFIG.marginX + c * (w + CONFIG.gap), y = CONFIG.marginY + r * (h + CONFIG.gap);
+    drawLabel(doc, x, y, d, color, fontFamily, radius, borderColor);
+  });
+  drawCutMarks(doc, cutSize);
+}
+
+async function generatePDF(data, color, borderColor){
+  clearMessages();
+  if (!data.length){ showBox("manualError", "Aucune donnée à imprimer."); return; }
+  showBox("manualInfo", "Génération du PDF...");
+  const options = getOptions();
+  const doc = new jsPDF({unit:"mm", format:"a4", compress:true});
+  const fontFamily = document.getElementById("fontChoice").value;
+  const perPage = CONFIG.cols * CONFIG.rows;
+
+  for (let i = 0; i < data.length; i += perPage){
+    if (i > 0) doc.addPage();
+    const pageRows = data.slice(i, i + perPage);
+    drawPage(doc, pageRows, color, fontFamily, options.radius, options.cutSize, borderColor);
+  }
+
+  doc.save(options.fileName);
+  showBox("manualInfo", "PDF généré : " + data.length + " étiquette(s).");
+}
+
+function manualData(){
+  return {
+    nom: document.getElementById("nom").value || "",
+    prenom: document.getElementById("prenom").value || "",
+    mail: document.getElementById("mail").value || "",
+    telephone: document.getElementById("telephone").value || ""
+  };
+}
+function generateManual(){
+  const item = manualData();
+  const list = Array.from({length:66}, () => ({...item}));
+  generatePDF(list, getManualColor(), getBorderColor());
+}
+document.getElementById("manualBtn").addEventListener("click", generateManual);
+
+// --- Aperçu réaliste ---
+function drawPreviewCanvas(){
+  const canvas = document.getElementById("previewCanvas");
+  const ctx = canvas.getContext("2d");
+  const scale = 8;
+  canvas.width = Math.round(CONFIG.labelWidth * scale);
+  canvas.height = Math.round(CONFIG.labelHeight * scale);
+  const bg = getManualColor();
+  const tc = textColorForBg(bg);
+  const radius = CONFIG.radius * scale;
+  const w = canvas.width, h = canvas.height;
+
+  ctx.clearRect(0,0,w,h);
+  roundedRectCanvas(ctx, 0.5, 0.5, w-1, h-1, radius);
+  ctx.fillStyle = `rgb(${bg.r},${bg.g},${bg.b})`;
+  ctx.fill();
+
+  // Bordure (décalée vers l'intérieur de lw/2 pour suivre l'arrondi)
+  const bc = getBorderColor();
+  if (bc){
+    const lw = 11.2;
+    const inset = lw / 2;
+    const br = Math.max(0.5, radius - inset);
+    roundedRectCanvas(ctx, 0.5 + inset, 0.5 + inset, w - 1 - lw, h - 1 - lw, br);
+    ctx.strokeStyle = `rgb(${bc.r},${bc.g},${bc.b})`;
+    ctx.lineWidth = lw;
+  } else {
+    roundedRectCanvas(ctx, 0.5, 0.5, w-1, h-1, radius);
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 1;
+  }
+  ctx.stroke();
+
+  const data = manualData();
+  const lines = buildLines(data);
+  const fontStack = previewFontFamily();
+  const sizes = chooseCanvasSizes(ctx, lines, (CONFIG.labelWidth - CONFIG.textPaddingX*2)*scale, (CONFIG.labelHeight - 1.6)*scale, fontStack);
+  const heights = lines.map((_, i) => ((i===0?sizes.nameSize:sizes.secondarySize) * 0.90 * CONFIG.lineSpacing));
+  const totalH = heights.reduce((a,b)=>a+b,0);
+  let y = (h - totalH)/2;
+
+  ctx.fillStyle = `rgb(${tc.r},${tc.g},${tc.b})`;
+  for (let i=0;i<lines.length;i++){
+    const s = i===0 ? sizes.nameSize : sizes.secondarySize;
+    const lineH = s * 0.90 * CONFIG.lineSpacing;
+    y += lineH*0.82;
+    ctx.font = `${i===0?'700':'400'} ${s}px ${fontStack}`;
+    ctx.fillText(lines[i], CONFIG.textPaddingX*scale, y);
+    y += lineH*0.18;
+  }
+}
+function roundedRectCanvas(ctx, x, y, w, h, r){
+  const rr = Math.max(0, Math.min(r, w/2, h/2));
+  ctx.beginPath();
+  ctx.moveTo(x+rr,y);
+  ctx.arcTo(x+w,y,x+w,y+h,rr);
+  ctx.arcTo(x+w,y+h,x,y+h,rr);
+  ctx.arcTo(x,y+h,x,y,rr);
+  ctx.arcTo(x,y,x+w,y,rr);
+  ctx.closePath();
+}
+function chooseCanvasSizes(ctx, lines, widthPx, heightPx, fontStack){
+  if (!lines.length) return {nameSize:18, secondarySize:14};
+  function fitsUniform(size){
+    let maxW = 0;
+    lines.forEach((line, i)=>{ ctx.font = `${i===0?'700':'400'} ${size}px ${fontStack}`; maxW = Math.max(maxW, ctx.measureText(line).width); });
+    const totalH = lines.length * size * 0.90 * CONFIG.lineSpacing;
+    return maxW <= widthPx && totalH <= heightPx;
+  }
+  function fitsPriority(nameSize, secSize){
+    ctx.font = `700 ${nameSize}px ${fontStack}`;
+    let maxW = ctx.measureText(lines[0]).width;
+    for(let i=1;i<lines.length;i++){ ctx.font = `400 ${secSize}px ${fontStack}`; maxW = Math.max(maxW, ctx.measureText(lines[i]).width); }
+    const totalH = (nameSize * 0.90 + (lines.length-1) * secSize * 0.90) * CONFIG.lineSpacing;
+    return maxW <= widthPx && totalH <= heightPx;
+  }
+  if (prioritizeName() && lines.length > 1){
+    for(let nameSize = 26; nameSize >= 10; nameSize -= 0.5){
+      for(let secSize = Math.min(nameSize - 2, 18); secSize >= 8; secSize -= 0.5){
+        if (fitsPriority(nameSize, secSize)) return {nameSize, secondarySize:secSize};
+      }
+    }
+  }
+  for(let s = 22; s >= 8; s -= 0.5){ if (fitsUniform(s)) return {nameSize:s, secondarySize:s}; }
+  return {nameSize:8, secondarySize:8};
+}
+drawPreviewCanvas();
+
+["nom","prenom","mail","telephone","displayMode","fontChoice","prioritizeName","borderColor","borderEnabled","bgColor"].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.addEventListener("input", drawPreviewCanvas);
+    el.addEventListener("change", drawPreviewCanvas);
+  }
+});
+
+window.addEventListener("error", (e) => {
+  console.error(e.error || e.message);
+  showBox("manualError", "Une erreur JavaScript a empêché la génération.");
+});
+})();
+</script>
+</body>
+</html>
