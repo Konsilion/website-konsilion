@@ -1,0 +1,26 @@
+﻿name,dependencies,duration,type,designation
+A,,3,Système & Réseau,Toto - Etat des lieux des systèmes d'assainissement domestiques non-connectés au réseau GAM
+B,A,10,Système & Réseau,Etudes de faisabilité technico-économique des travaux d'aménagement pour les systèmes d'assainissement domestiques non-connectés au réseau GAM
+C,A,3,Système & Réseau,Etat des lieux des réseaux de collecte & deversoirs
+D,C,5,Système & Réseau,Etude de Risque & Opportunité relatif à un nouveau seuil de 2% de rejet par temps sec
+E,C,5,Pilotage & Stratégie,Etude des vulnérabilités du système d'assainissement face au Changement Climatique
+F,"E,H,N,R",5,Pilotage & Stratégie,Plan d'adaptation au changement climatique du système d'assainissement
+G,,3,Energie,Diagnostic des flux d'énergie du système assainissement
+H,G,5,Energie,Etude de Risque & Opportunité des techniques de production et de sobriété énergétique du SA
+I,H,10,Energie,Etude de faisabilité technico-économique de sobriété & efficacité énergétique (aquapole)
+J,I,10,Energie,Etude de faisabilité technico-économique de production énergétique (aquapole)
+K,H,10,Energie,Etude de faisabilité technico-économique de sobriété & efficacité énergétique (hors aquapole)
+L,K,10,Energie,Etude de faisabilité technico-économique de production énergétique (hors aquapole)
+M,,3,Azote & Phosphore,Diagnostic des flux Azote/Phosphore sur le territoire GAM
+N,M,5,Azote & Phosphore,Etude de Risque & Opportunité des techniques de maitrise des flux Azote/Phosphore
+O,N,10,Azote & Phosphore,Etudes de faisabilité technico-économique d'abatement de l'Azote et Phosphore (aquapole)
+P,N,10,Azote & Phosphore,Etudes de faisabilité technico-économique de maitrise du flux Azote et Phosphore (hors aquapole)
+Q,,3,Micro-polluant,Diagnostic des flux micro-polluants sur le territoire GAM
+R,Q,5,Micro-polluant,Etude de Risque & Opportunité des techniques de maitrise des flux micro-polluants 
+S,R,10,Micro-polluant,Etudes de faisabilité technico-économique d'abattement de micro-polluants (aquapole)
+T,R,10,Micro-polluant,Etudes de faisabilité technico-économique de maitrise du flux des micro-polluants (hors aquapole)
+U,"D,H,N,R",5,Pilotage & Stratégie,Evaluation de la cohérence avec le Schema Directeur d'Assainissement et la refonte DERU 
+V,H,5,Pilotage & Stratégie,Evaluation de la cohérence avec la cohérence du Schema Directeur Energie GAM et la refonte DERU
+W,"C,G,MQ",30,Pilotage & Stratégie,"Mise en place et conduite d'un comité de pilotage transverse (Pollutions, Energie, GES, Reseau)"
+X,,30,Pilotage & Stratégie,Plaidoirie concernant les contraintes opérationnelles et territoriales de la transposition en droit français
+
